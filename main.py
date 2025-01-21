@@ -76,7 +76,7 @@ def start_buttons(bot, update):
         pyrogram.types.InlineKeyboardButton("Updates", url="https://t.me/yashacharajmarg"),
         pyrogram.types.InlineKeyboardButton("About 🤠", callback_data="about")
     ],[
-        pyrogram.types.InlineKeyboardButton("➕️ Add To Your Channel ➕️", url=f"t.me/Yashacha_bot.?startchannel=true")
+        pyrogram.types.InlineKeyboardButton("➕️ Add To Your Channel ➕️", url=f"t.me/bot.yashacharajmarg?startchannel=true")
     ]]
     return pyrogram.types.InlineKeyboardMarkup(buttons)
 
