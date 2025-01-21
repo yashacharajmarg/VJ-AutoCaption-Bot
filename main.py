@@ -17,14 +17,14 @@ start_message = """
 <b>👋Hello {}</b>
 <b>I am an AutoCaption bot</b>
 <b>All you have to do is to add me to your channel as admin and I will show you my power</b>
-<b>@VJ_Botz</b>"""
+<b>@yashacharajmarg</b>"""
 
 about_message = """
-<b>• Name : <a href=https://t.me/VJ_Botz>VJ AutoCaption</a></b>
-<b>• Developer : <a href=https://t.me/VJ_Botz>[VJ UPDATES]</a></b>
+<b>• Name : <a href= https://t.me/yashacharajmarg>auto caption</a></b>
+<b>• Developer : <a href= https://t.me/yashacharajmarg>[VJ UPDATES]</a></b>
 <b>• Language : Python3</b>
 <b>• Library : Pyrogram v{version}</b>
-<b>• Updates : <a href=https://t.me/VJ_Botz>Click Here</a></b>
+<b>• Updates : <a href=https://t.me/yashacharajmarg>Click Here</a></b>
 <b>• Source Code : <a href=https://github.com/VJBots/VJ-AutoCaption-Bot>Click Here</a></b>"""
 
 @AutoCaptionBotV1.on_message(pyrogram.filters.private & pyrogram.filters.command(["start"]))
@@ -73,10 +73,10 @@ def get_file_details(update: pyrogram.types.Message):
 def start_buttons(bot, update):
     bot = bot.get_me()
     buttons = [[
-        pyrogram.types.InlineKeyboardButton("Updates", url="t.me/VJ_Botz"),
+        pyrogram.types.InlineKeyboardButton("Updates", url="https://t.me/yashacharajmarg"),
         pyrogram.types.InlineKeyboardButton("About 🤠", callback_data="about")
     ],[
-        pyrogram.types.InlineKeyboardButton("➕️ Add To Your Channel ➕️", url=f"http://t.me/{bot.username}?startchannel=true")
+        pyrogram.types.InlineKeyboardButton("➕️ Add To Your Channel ➕️", url=f"t.me/Yashacha_bot.?startchannel=true")
     ]]
     return pyrogram.types.InlineKeyboardMarkup(buttons)
 
